@@ -8,7 +8,10 @@ const cookieParser = require("cookie-parser");
 const app = express();
 db();
 const corsOptions = {
-  origin: ["http://localhost:3000"],
+  origin: [
+    "http://localhost:3000",
+    "https://monumental-klepon-feb34a.netlify.app",
+  ],
   credentials: true,
   methods: ["GET", "POST", "DELETE", "PUT"],
 };
