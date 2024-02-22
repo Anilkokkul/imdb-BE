@@ -8,11 +8,7 @@ const cookieParser = require("cookie-parser");
 const app = express();
 db();
 const corsOptions = {
-  origin: [
-    "http://localhost:3000",
-    "https://master--rainbow-buttercream-b0790d.netlify.app",
-    "https://rainbow-buttercream-b0790d.netlify.app",
-  ],
+  origin: ["http://localhost:3000"],
   credentials: true,
   methods: ["GET", "POST", "DELETE", "PUT"],
 };
